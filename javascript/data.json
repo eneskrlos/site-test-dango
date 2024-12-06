@@ -1,0 +1,52 @@
+{
+    "collections": [
+        {
+            "id": 1,
+            "imageName": "Chica modelo mirando al frente",
+            "imageUrl": "image_37.png",
+            "price": 176.98
+        },
+        {
+            "id": 2,
+            "imageName": "Chica modelo mirando al frente",
+            "imageUrl": "image_40.png",
+            "price": 126.98
+        },
+        {
+            "id": 3,
+            "imageName": "Chica modelo mirando al frente",
+            "imageUrl": "image_38.png",
+            "price": 136.98
+        },
+        {
+            "id": 4,
+            "imageName": "Chica modelo mirando al frente",
+            "imageUrl": "image_35.png",
+            "price": 146.98
+        },
+        {
+            "id": 5,
+            "imageName": "Chica modelo mirando al frente",
+            "imageUrl": "image_37.png",
+            "price": 176.98
+        },
+        {
+            "id": 6,
+            "imageName": "Chica modelo mirando al frente",
+            "imageUrl": "image_40.png",
+            "price": 126.98
+        },
+        {
+            "id": 7,
+            "imageName": "Chica modelo mirando al frente",
+            "imageUrl": "image_38.png",
+            "price": 136.98
+        },
+        {
+            "id": 8,
+            "imageName": "Chica modelo mirando al frente",
+            "imageUrl": "image_35.png",
+            "price": 146.98
+        }
+    ]
+}
