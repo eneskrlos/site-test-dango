@@ -206,7 +206,7 @@ article > header {
 }
 
 .section-catalog {
-    margin-top: 20px;
+    margin: 20px 20% 0 20%;
     overflow: hidden;
 }
 
@@ -325,7 +325,7 @@ article > footer {
     display: grid;
     grid-template-columns: repeat(4, minmax(154px, 1fr));
     grid-template-rows: repeat(2, 1fr);
-    /* margin: 26px 15% 0 15%; */
+    margin: 26px;
     gap: 20px;
     width: calc(100% / 2);
     height: 100%;
@@ -409,6 +409,7 @@ article > footer {
 }
 
 .slider-gellery {
+    margin-top: 26px;
     width: 200%;
     height: inherit;
     display: flex;
