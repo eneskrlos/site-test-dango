@@ -15,9 +15,9 @@ let ejeX = 0;
 let counter = 0;
 let widthSlider = 100 / slider.length
 
-setInterval(() => {
+/* setInterval(() => {
     moveToRigth();
-}, 5000);
+}, 5000); */
 
 const moveToRigth = () => {
     counter++;
@@ -75,4 +75,14 @@ const moveToLefthGallery = () => {
 
 buttonBackGallery.addEventListener("click", moveToLefthGallery);
 buttonNextGallery.addEventListener("click", moveToRigthGallery);
+
+/* const buttomMenu = document.querySelector(".menuToggle");
+buttomMenu.addEventListener('click', function() {
+    const navbar = document.getElementById('navbar');
+    if (navbar.style.display === 'block') {
+        navbar.style.display = 'none'; 
+    } else {
+        navbar.style.display = 'block'; 
+    }
+}); */
 

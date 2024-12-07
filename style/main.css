@@ -16,20 +16,24 @@ header {
     height: 94px;
 }
 
-header > nav {
+.navbarNormal {
+    display: block;
+}
+
+header > .navbarNormal {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 19.36px;
 }
 
-nav > ul {
+.navbarNormal > ul {
     display: flex;
     gap: 43px;
 }
 
 
-nav > ul > li {
+.navbarNormal > ul > li {
     display: inline;
 }
 
@@ -77,6 +81,12 @@ button {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     margin-top: 24px;
+}
+
+.grid-header-item-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-header-item-2 {
@@ -416,3 +426,33 @@ article > footer {
     transition: all ease 0.6s;
 }
 
+@media (max-widht: 375px) {
+    
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.navbarMovil {
+    display: none;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .navbarNormal {
+        display: none; /* Ocultar el menú en pantallas pequeñas */
+    }
+
+
+   
+
+    .menu-toggle {
+        display: block; /* Mostrar el botón para abrir el menú */
+        background-color: #007bff; /* Color de fondo del botón */
+        color: white; /* Color del texto del botón */
+        border: none; /* Sin borde */
+        padding: 10px; /* Espaciado interno */
+        cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    }
+}
