@@ -76,13 +76,14 @@ const moveToLefthGallery = () => {
 buttonBackGallery.addEventListener("click", moveToLefthGallery);
 buttonNextGallery.addEventListener("click", moveToRigthGallery);
 
-/* const buttomMenu = document.querySelector(".menuToggle");
+const buttomMenu = document.querySelector("#btnMenuToggle");
 buttomMenu.addEventListener('click', function() {
-    const navbar = document.getElementById('navbar');
-    if (navbar.style.display === 'block') {
-        navbar.style.display = 'none'; 
-    } else {
-        navbar.style.display = 'block'; 
-    }
-}); */
+    document.getElementById("mobile-menu").style.width = "100%"
+    
+});
+
+const buttomClose = document.querySelector(".btn-close");
+buttomClose.addEventListener('click', function() {
+    document.getElementById("mobile-menu").style.width = "0%"
+});
 

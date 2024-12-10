@@ -102,7 +102,7 @@ button {
 }
 
 .img-grid-header-item-3 {
-    width: 12.87px;
+    max-width: 12.87px;
     height: 17.18px;
     margin-right: 60.24px;
 }
@@ -146,6 +146,10 @@ button {
 article > header {
     background: inherit;
 }
+
+/* .carrousel-element-1-item-1 {
+    max-width: 100%;
+} */
 
 .carrousel-element-1-item-1 > article > header > h1 {
     color: #7AA65A;
@@ -434,25 +438,109 @@ article > footer {
     display: none;
 }
 
-.navbarMovil {
+/* .navMobil {
     display: none;
+} */
+
+.grid-header-item-1 .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
 }
 
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
+.grid-header-item-1 .overlay .navMobil {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.grid-header-item-1 .overlay .navMobil a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 8s;
+    font-weight: 400;
+    color: #7AA65A;
+}
+
+.grid-header-item-1 .overlay .navMobil a:hover,
+.grid-header-item-1 .overlay .navMobil a:focus {
+    color: #7AA65A;
+}
+
+.grid-header-item-1 .overlay .btn-close {
+    position: absolute;
+    top: 28px;
+    right: 45px;
+    font-size: 65px;
+}
+
+.menu-toggle,
+.btn-close {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+/**Media Querys**/
+@media (min-width: 769px) and (max-width: 875px) {
     .navbarNormal {
-        display: none; /* Ocultar el menú en pantallas pequeñas */
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19.36px;
+    }
+}
+
+@media screen and (max-height: 458px) {
+    header .grid-header .grid-header-item-1 .overlay a {
+        font-size: 20px;
     }
 
+    header .grid-header .grid-header-item-1 .overlay .btn-close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
 
-   
+
+/* /* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .navbarNormal {
+        display: none; 
+    }
 
     .menu-toggle {
-        display: block; /* Mostrar el botón para abrir el menú */
-        background-color: #007bff; /* Color de fondo del botón */
-        color: white; /* Color del texto del botón */
-        border: none; /* Sin borde */
-        padding: 10px; /* Espaciado interno */
-        cursor: pointer; /* Cambiar cursor al pasar el mouse */
+        display: block; 
+        color: #7AA65A; 
+        border: none;
+        padding: 10px; 
+        cursor: pointer; 
     }
+
+    .navMobil {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.36px;
+    }
+    
+    .navMobil a {
+        color: #7AA65A;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+ 
 }

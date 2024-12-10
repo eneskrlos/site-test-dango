@@ -22,29 +22,18 @@
         
             <div class="grid-header">
                 <div class="grid-header-item-1">
-                    <button class="menu-toggle" id="menuToggle">☰</button>
-                    <nav class="navbarMovil" id="navbarMovil">
-                        <ul>
-                            <li>
-                                <a class="active" href="./index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Item 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Item 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Item 3</a>
-                            </li>
-                            <li>
-                                <a href="#">Item 4</a>
-                            </li>
-                            <li>
-                                <a href="#">Item 5</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <button class="menu-toggle" id="btnMenuToggle" >☰</button>
+                    <div class="overlay" id="mobile-menu">
+                        <button type="button" href="" class="btn-close">&times;</button>
+                        <nav class="navMobil">
+                            <a class="active" href="./index.html">Home</a>
+                            <a href="#">Item 1</a>
+                            <a href="#">Item 2</a>
+                            <a href="#">Item 3</a>
+                            <a href="#">Item 4</a>
+                            <a href="#">Item 5</a>
+                        </nav>
+                    </div>
                 </div>
                 <div class="grid-header-item-2">
                     <nav class="navbarNormal" id="navbarNormal">
@@ -78,7 +67,7 @@
             </div>
         
     </header>
-    <!--<main>
+    <main>
         <section class="section-crousel"> 
             <div class="container-carousel" id="carousel">
                 <div class="slider"> 
