@@ -120,7 +120,7 @@ button {
 .section-crousel {
     height: 653px;
     width: auto;
-    background-image: url('/resource/Rectangle\ 2421.png');
+    background-image: url('../resource/Rectangle_2421.png');
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
