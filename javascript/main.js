@@ -15,9 +15,9 @@ let ejeX = 0;
 let counter = 0;
 let widthSlider = 100 / slider.length
 
-/* setInterval(() => {
+setInterval(() => {
     moveToRigth();
-}, 5000); */
+}, 5000);
 
 const moveToRigth = () => {
     counter++;
